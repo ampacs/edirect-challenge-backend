@@ -1,0 +1,45 @@
+GET http://localhost:5000/
+
+###
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/api/projects
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZWxldGVkIjpmYWxzZSwidXNlcm5hbWUiOiJ0ZXN0IiwicGFzc3dvcmQiOiIkMmIkMTAkNm56dmF6c3FEQTZOanh1elNLcmNPLnJYbGdKLkJkYzR3RExzcC9DUm1IYzJnR3k1ang3UWkiLCJpYXQiOjE1OTA3Mjg5Mzh9.syLvlFP7z9ogs6LYcrXnedGnfb8i-JyAYS6yqidkhok
+
+###
+POST http://localhost:5000/api/project/update
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZWxldGVkIjpmYWxzZSwidXNlcm5hbWUiOiJ0ZXN0IiwicGFzc3dvcmQiOiIkMmIkMTAkNm56dmF6c3FEQTZOanh1elNLcmNPLnJYbGdKLkJkYzR3RExzcC9DUm1IYzJnR3k1ang3UWkiLCJpYXQiOjE1OTA3Mjg5Mzh9.syLvlFP7z9ogs6LYcrXnedGnfb8i-JyAYS6yqidkhok
+Content-Type: application/json
+
+{
+    "id": "5ed0a288af29b6450cfb435d",
+    "name": "test-project55"
+}
+
+###
+POST http://localhost:5000/api/project/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZWxldGVkIjpmYWxzZSwidXNlcm5hbWUiOiJ0ZXN0IiwicGFzc3dvcmQiOiIkMmIkMTAkNm56dmF6c3FEQTZOanh1elNLcmNPLnJYbGdKLkJkYzR3RExzcC9DUm1IYzJnR3k1ang3UWkiLCJpYXQiOjE1OTA3Mjg5Mzh9.syLvlFP7z9ogs6LYcrXnedGnfb8i-JyAYS6yqidkhok
+Content-Type: application/json
+
+{
+    "name": "test-project6"
+}
+
+###
+POST http://localhost:5000/api/user/register
+Content-Type: application/json
+
+{
+    "username": "test",
+    "password": "pww"
+}
+
+###
+POST http://localhost:5000/api/user/login
+Content-Type: application/json
+
+{
+    "username": "test",
+    "password": "pww"
+}
