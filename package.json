@@ -19,7 +19,7 @@
     "mongodb": "^3.5.8"
   },
   "devDependencies": {
-    "madge": "^3.9.0",
+    "madge": "^4.0.1",
     "nodemon": "^2.0.4"
   }
 }
